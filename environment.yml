@@ -6,5 +6,5 @@ dependencies:
   - numpy
   - matplotlib
   - scipy
-  - re
+  - regex
   
