@@ -1,6 +1,6 @@
-% Sashank Pisupati 02/02/2020
 % Simulation code for Cosyne 2020 Tutorial by Ann Hermundstad
 % This script uses the following functions from the "matlab_code" folder: pmkmp.m, vmrand.m, circ_vmpdf.m
+% Sashank Pisupati 02/02/2020
 % Tested on Matlab R2019b
 
 %% Environmental params
@@ -415,16 +415,16 @@ for e = 1:2
                 drawnow
             end
             
-            % Observe sensory outcome of action, re-evaluate current,prospective location
+            % Observe sensory outcome of action, re-evaluate current location
+            vPrev = vCurr;
             vCurr = valueFunc(F(iCurr,jCurr),w,beePars.valueFuncType);
-            vNext = valueFunc(F(iNext,jNext),w,beePars.valueFuncType);
             
             % Observe reward outcome of action, update weights based on learning rule
             reward = nectarFunc(F(iCurr,jCurr),envPars,env{e});
             
             if learning && ~isempty(vNext)
                 % Temporally discounted reward prediction error
-                delta = reward+beePars.discountGamma*vNext-vCurr;
+                delta = reward+beePars.discountGamma*vCurr-vPrev;
                 switch beePars.valueFuncType
                     case 'linear'
                         % Gradient of value w.r.t. weights
