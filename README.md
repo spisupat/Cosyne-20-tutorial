@@ -5,3 +5,5 @@ This repository contains a Jupyter notebook (Python 3) version and a Matlab (tes
 
 You can use the following binder link to open an interactive python notebook even if you don't have python installed
 https://mybinder.org/v2/gh/spisupat/Cosyne-20-tutorial/207df683443c8ced126545e72342c2dd7a543ad2
+
+Teaching materials for this tutorial can be found here https://www.janelia.org/lab/hermundstad-lab/teaching
