@@ -6,4 +6,9 @@ This repository contains a Jupyter notebook (Python 3) version and a Matlab (tes
 You can use the following binder link to open an interactive python notebook even if you don't have python installed
 https://mybinder.org/v2/gh/spisupat/Cosyne-20-tutorial/207df683443c8ced126545e72342c2dd7a543ad2
 
+Topics covered in this tutorial: Normative models of
+- Sensory representation (efficient coding)
+- Online contextual inference (Bayesian filtering in an HMM)
+- Action selection/evaluation (reinforcement learning using TD w/ linear function approximation)
+
 Teaching materials for this tutorial can be found here https://www.janelia.org/lab/hermundstad-lab/teaching
